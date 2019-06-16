@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CarthageSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="S7l-pf-VV9">
+                                <rect key="frame" x="123.5" y="50" width="128" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="S7l-pf-VV9" secondAttribute="height" multiplier="1:1" id="Doa-pD-nov"/>
+                                    <constraint firstAttribute="height" constant="128" id="NSi-Av-Yh6"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="64"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XCJ-UB-8ga">
+                                <rect key="frame" x="20" y="208" width="335" height="365.5"/>
+                                <mutableString key="text">Pokémon Detective Pikachu is a 2019 urban fantasy mystery film directed by Rob Letterman. Based on the Pokémon franchise created by Satoshi Tajiri and the 2016 video game Detective Pikachu,[4] it was written by Letterman, Dan Hernandez, Benji Samit and Derek Connolly, from a story by Hernandez, Samit and Nicole Perlman. The film was produced by Legendary Pictures in association with Toho. It is the first live-action Pokemon film.[5] Ryan Reynolds stars as the voice and facial motion capture of Pikachu, with Justice Smith, Kathryn Newton, Suki Waterhouse, Omar Chaparro, Chris Geere, Ken Watanabe and Bill Nighy in live-action roles.
+</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="XCJ-UB-8ga" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="7T7-gT-bi0"/>
+                            <constraint firstItem="XCJ-UB-8ga" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="-20" id="CaD-9J-6il"/>
+                            <constraint firstItem="S7l-pf-VV9" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="FpV-ag-b0E"/>
+                            <constraint firstItem="XCJ-UB-8ga" firstAttribute="top" secondItem="S7l-pf-VV9" secondAttribute="bottom" constant="30" id="LnJ-Nt-y7q"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="XCJ-UB-8ga" secondAttribute="bottom" constant="20" id="Q8g-6g-Ybx"/>
+                            <constraint firstItem="S7l-pf-VV9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="aFh-bg-W8h"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="leading" secondItem="XCJ-UB-8ga" secondAttribute="leading" constant="-20" id="amT-F8-S5J"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="imgView" destination="S7l-pf-VV9" id="pW7-Jc-xIh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
