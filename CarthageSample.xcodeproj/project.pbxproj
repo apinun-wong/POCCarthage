@@ -3,12 +3,16 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FB852B3922B00F3E00ECD035 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FB852B3422B00E2800ECD035 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		FB852B3B22B00F3E00ECD035 /* AlamofireImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FB852B3322B00E2800ECD035 /* AlamofireImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FB80BE0C22C89B1A00F906D3 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB80BDE722C8846600F906D3 /* Alamofire.framework */; };
+		FB80BE0D22C89B1A00F906D3 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FB80BDE722C8846600F906D3 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FB80BE0E22C89B1A00F906D3 /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB80BDE822C8846600F906D3 /* SDWebImage.framework */; };
+		FB80BE0F22C89B1A00F906D3 /* SDWebImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FB80BDE822C8846600F906D3 /* SDWebImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FB80BE1022C89B1B00F906D3 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB80BDE922C8846600F906D3 /* SnapKit.framework */; };
+		FB80BE1122C89B1B00F906D3 /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FB80BDE922C8846600F906D3 /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FB9EEE6D229EDD7800F79022 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9EEE6C229EDD7800F79022 /* AppDelegate.swift */; };
 		FB9EEE6F229EDD7800F79022 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9EEE6E229EDD7800F79022 /* ViewController.swift */; };
 		FB9EEE72229EDD7800F79022 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB9EEE70229EDD7800F79022 /* Main.storyboard */; };
@@ -36,14 +40,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		FB852B3C22B00F3E00ECD035 /* Embed Frameworks */ = {
+		FB80BE1222C89B1B00F906D3 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				FB852B3922B00F3E00ECD035 /* Alamofire.framework in Embed Frameworks */,
-				FB852B3B22B00F3E00ECD035 /* AlamofireImage.framework in Embed Frameworks */,
+				FB80BE1122C89B1B00F906D3 /* SnapKit.framework in Embed Frameworks */,
+				FB80BE0F22C89B1A00F906D3 /* SDWebImage.framework in Embed Frameworks */,
+				FB80BE0D22C89B1A00F906D3 /* Alamofire.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -51,8 +56,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		FB80BDE722C8846600F906D3 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		FB80BDE822C8846600F906D3 /* SDWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDWebImage.framework; path = Carthage/Build/iOS/SDWebImage.framework; sourceTree = "<group>"; };
+		FB80BDE922C8846600F906D3 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
 		FB852B3322B00E2800ECD035 /* AlamofireImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireImage.framework; path = Carthage/Build/iOS/AlamofireImage.framework; sourceTree = "<group>"; };
-		FB852B3422B00E2800ECD035 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		FB9EEE69229EDD7800F79022 /* CarthageSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarthageSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB9EEE6C229EDD7800F79022 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB9EEE6E229EDD7800F79022 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -73,6 +80,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB80BE1022C89B1B00F906D3 /* SnapKit.framework in Frameworks */,
+				FB80BE0E22C89B1A00F906D3 /* SDWebImage.framework in Frameworks */,
+				FB80BE0C22C89B1A00F906D3 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,7 +106,9 @@
 		FB852B3222B00E2800ECD035 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FB852B3422B00E2800ECD035 /* Alamofire.framework */,
+				FB80BDE722C8846600F906D3 /* Alamofire.framework */,
+				FB80BDE822C8846600F906D3 /* SDWebImage.framework */,
+				FB80BDE922C8846600F906D3 /* SnapKit.framework */,
 				FB852B3322B00E2800ECD035 /* AlamofireImage.framework */,
 			);
 			name = Frameworks;
@@ -165,7 +177,7 @@
 				FB9EEE66229EDD7800F79022 /* Frameworks */,
 				FB9EEE67229EDD7800F79022 /* Resources */,
 				FB852B3722B00ECA00ECD035 /* ShellScript */,
-				FB852B3C22B00F3E00ECD035 /* Embed Frameworks */,
+				FB80BE1222C89B1B00F906D3 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -285,22 +297,29 @@
 /* Begin PBXShellScriptBuildPhase section */
 		FB852B3722B00ECA00ECD035 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 12;
+			buildActionMask = 8;
 			files = (
 			);
 			inputFileListPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SnapKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SDWebImage.framework",
 			);
 			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/AlamofireImage.framework",
+				"",
+				"",
+				"",
 			);
 			outputFileListPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Alamofire.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/SnapKit.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/SDWebImage.framework",
 			);
 			outputPaths = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
+			runOnlyForDeploymentPostprocessing = 1;
 			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
